@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
-# Create your views here.
+
+
+def group_posts(request, slug):
+    return HttpResponse(f'Посты группы {slug}')
+
+    # Create your views here.
+def index(request):
+    return HttpResponse('Главная страница')
